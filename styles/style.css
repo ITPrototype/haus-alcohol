@@ -94,6 +94,7 @@
 
 .btn-shop-all {
     background: none;
+    border: 1px solid black;
     padding: 18px 52px;
     cursor: pointer;
     margin-top: 46px;
@@ -165,6 +166,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .section-text-muted {
@@ -207,6 +209,7 @@
     color: white;
     cursor: pointer;
     margin-top: 27px;
+    border: 1px solid transparent;
 }
 
 .btn-card:hover {
@@ -423,7 +426,6 @@
 
 footer {
     width: 100%;
-    height: 547px;
     background: #000000;
     padding: 45px 60px;
     color: white;
@@ -511,6 +513,7 @@ footer {
     cursor: pointer;
     text-transform: uppercase;
     color: gray;
+    border: 1px solid transparent;
 }
 
 .right-links div ul li:hover {
@@ -524,7 +527,10 @@ footer {
     text-align: center;
     display: none;
 }
-
+.sample-kit{
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+}
 @media screen and (max-width:1466px) {
     .intro-text {
         font-size: 55px;
@@ -548,12 +554,46 @@ footer {
     }
 }
 
-@media screen and (max-width:1084px) {
-    .wrapper {
-        display: none;
+@media screen and (max-width:1144px) {
+    .card img {
+        width: 250px;
     }
 
-    .error-mob {
-        display: block;
+    .under-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 800px;
+        margin: 20px auto;
+    }
+    .fst-box:nth-child(1) img:nth-child(1){
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .cards{
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .card{
+        margin-top: 20px;
+    }
+    .prod-text{
+        padding: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right-links{
+        margin-top: 10px;
     }
 }
